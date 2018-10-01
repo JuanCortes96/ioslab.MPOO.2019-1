@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    var  secciones = ["Comida", "Linea blanca", "Productos del hogar"]
+    var  secciones: [Producto] = [Producto(nombre: "carne", precio: 23.50), ]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return secciones.count
@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Celda1", for: indexPath)
         
-        cell.textLabel?.text = secciones[indexPath.row]
+        cell.textLabel?.text = secciones[indexPath.row].nombre
         
         
         return cell
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if segue.identifier == "SecondView"{
             let indexPath = TablaSupermercado.indexPathForSelectedRow
             let destino = segue.destination as! SecondViewController
-            destino.fromFirstView = secciones[(indexPath?.row)!]
+            destino.fromFirstView = secciones[(indexPath?.row)!].nombre + "     " + String(secciones[(indexPath?.row)!].precio)
             
         }
         
