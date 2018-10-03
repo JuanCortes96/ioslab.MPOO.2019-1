@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA408F04215EB4FA000D81A9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA408F03215EB4FA000D81A9 /* File.swift */; };
 		FA4AFD7E215041600032A850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AFD7D215041600032A850 /* AppDelegate.swift */; };
 		FA4AFD80215041600032A850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AFD7F215041600032A850 /* ViewController.swift */; };
 		FA4AFD83215041600032A850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4AFD81215041600032A850 /* Main.storyboard */; };
 		FA4AFD85215041610032A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4AFD84215041610032A850 /* Assets.xcassets */; };
 		FA4AFD88215041610032A850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4AFD86215041610032A850 /* LaunchScreen.storyboard */; };
 		FA4AFD9021504B2D0032A850 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AFD8F21504B2D0032A850 /* SecondViewController.swift */; };
+		FA6958A02165798300217078 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69589F2165798300217078 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA408F03215EB4FA000D81A9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		FA4AFD7A215041600032A850 /* CarritoDeCompras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarritoDeCompras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4AFD7D215041600032A850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA4AFD7F215041600032A850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		FA4AFD87215041610032A850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA4AFD89215041610032A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA4AFD8F21504B2D0032A850 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FA69589F2165798300217078 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				FA4AFD7D215041600032A850 /* AppDelegate.swift */,
 				FA4AFD7F215041600032A850 /* ViewController.swift */,
 				FA4AFD81215041600032A850 /* Main.storyboard */,
+				FA69589F2165798300217078 /* ThirdViewController.swift */,
+				FA408F03215EB4FA000D81A9 /* File.swift */,
 				FA4AFD8F21504B2D0032A850 /* SecondViewController.swift */,
 				FA4AFD84215041610032A850 /* Assets.xcassets */,
 				FA4AFD86215041610032A850 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4AFD80215041600032A850 /* ViewController.swift in Sources */,
+				FA408F04215EB4FA000D81A9 /* File.swift in Sources */,
+				FA6958A02165798300217078 /* ThirdViewController.swift in Sources */,
 				FA4AFD9021504B2D0032A850 /* SecondViewController.swift in Sources */,
 				FA4AFD7E215041600032A850 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CarritoDeCompras/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CarritoDeCompras/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

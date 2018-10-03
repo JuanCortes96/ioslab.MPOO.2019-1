@@ -10,14 +10,19 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var fromFirstView : String = ""
+    var fromFirstView : Producto = Producto(nombre: "", precio: 0.0)
+    var carritoDos : [Producto] = []
 
     @IBOutlet weak var etiqueta: UILabel!
+    
+    @IBAction func comprar(_ sender: UIButton) {
+        carritoDos.append(fromFirstView)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        etiqueta.text = fromFirstView
+        etiqueta.text = fromFirstView.nombre + "      " + String(fromFirstView.precio)
     }
 
 
